@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Ana Sayfa Arka Plan ve Genel Ayarlar */
+.home-page-container {
+  background-color: #f4f7f9;
+  min-height: 100vh;
+}
+
+/* Hero Section Başlıkları */
+.hero-title {
+  text-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* CURATED PICKS Başlık Stili */
+.curated-title {
+  text-align: center;
+  margin-bottom: 48px !important;
+  font-weight: 900 !important;
+  color: #0d47a1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* Başlığın altına dekoratif mavi çizgi ekler */
+.curated-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #42a5f5;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* --- GRID HİZALAMA SİHİRİ --- */
+/* Kartların bulunduğu ana konteynırı ortalar */
+.product-grid-container {
+  display: flex !important;
+  justify-content: center !important; /* Kart sayısından bağımsız olarak ortalar */
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Her bir kartın (Grid item) kendi içindeki konumunu ortalar */
+.product-grid-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+}
+
+/* Kartların genişliğini kontrol eder */
+.product-grid-item > div {
+  width: 100%;
+  max-width: 320px; /* Kartların aşırı yayılmasını engeller */
+}
+
+/* Login & Register Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+}
+
+.auth-input .MuiOutlinedInput-root {
+  color: white;
+}
+
+.auth-input .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(79, 195, 247, 0.3);
+}
+
+.auth-input:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #4fc3f7 !important;
+}
+
+.auth-button {
+  background-color: #4fc3f7 !important;
+  color: #000 !important;
+  font-weight: 900 !important;
+  margin-top: 20px !important;
+}
+
+/* Auth (Login & Register) Ana Konteynır */
+.auth-page-wrapper {
+  background: radial-gradient(circle at center, #1e1e1e 0%, #121212 100%);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Kart Stili */
+.auth-card-custom {
+  background-color: #1e1e1e !important;
+  border: 1px solid rgba(79, 195, 247, 0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6) !important;
+  transition: transform 0.3s ease;
+}
+
+.auth-card-custom:hover {
+  transform: translateY(-5px);
+  border-color: rgba(79, 195, 247, 0.3);
+}
+
+/* Input Alanları İçin Renk Düzenlemeleri */
+.auth-input-field .MuiOutlinedInput-root {
+  color: white !important;
+}
+
+.auth-input-field .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.auth-input-field:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #4fc3f7 !important;
+}
+
+.auth-input-field .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #4fc3f7 !important;
+  border-width: 2px;
+}
+
+.auth-input-field .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Buton Efekti */
+.auth-action-button {
+  background-color: #4fc3f7 !important;
+  color: #000 !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px;
+  padding: 12px 0 !important;
+  margin-top: 25px !important;
+  transition: 0.3s !important;
+}
+
+.auth-action-button:hover {
+  background-color: #29b6f6 !important;
+  box-shadow: 0 0 15px rgba(79, 195, 247, 0.4);
+}
